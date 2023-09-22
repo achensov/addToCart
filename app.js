@@ -16,39 +16,39 @@ closeShopping.addEventListener("click", () => {
 let products = [
   {
     id: 1,
-    name: "PRODUCT NAME 1",
+    name: "Hunter Bridle w/ Reins",
     image: "1.PNG",
-    price: "£20",
+    price: 99.99,
   },
   {
     id: 2,
-    name: "PRODUCT NAME 2",
+    name: "Close Contact Jump Saddle",
     image: "2.PNG",
-    price: 120000,
+    price: 334.99,
   },
   {
     id: 3,
-    name: "PRODUCT NAME 3",
+    name: "Stable Rug 400g",
     image: "3.PNG",
-    price: 220000,
+    price: 169.99,
   },
   {
     id: 4,
-    name: "PRODUCT NAME 4",
+    name: "Rambo Travel Boots",
     image: "4.PNG",
-    price: 123000,
+    price: 86.99,
   },
   {
     id: 5,
-    name: "PRODUCT NAME 5",
+    name: "Bee Combo Fly Rug",
     image: "5.PNG",
-    price: 320000,
+    price: 59.99,
   },
   {
     id: 6,
-    name: "PRODUCT NAME 6",
+    name: "Treeless ANTI SLIP saddle pad",
     image: "6.PNG",
-    price: 120000,
+    price: 49.99,
   },
 ];
 let listCards = [];
@@ -59,7 +59,7 @@ function initApp() {
     newDiv.innerHTML = `
             <img src="image/${value.image}">
             <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString()}</div>
+            <div class="price">£${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
     list.appendChild(newDiv);
   });
@@ -85,7 +85,7 @@ function reloadCard() {
       newDiv.innerHTML = `
                 <div><img src="image/${value.image}"/></div>
                 <div>${value.name}</div>
-                <div>${value.price.toLocaleString()}</div>
+                <div>£${value.price.toLocaleString()}</div>
                 <div>
                     <button onclick="changeQuantity(${key}, ${
         value.quantity - 1
@@ -98,7 +98,7 @@ function reloadCard() {
       listCard.appendChild(newDiv);
     }
   });
-  total.innerText = totalPrice.toLocaleString();
+  total.innerText = `£ ${totalPrice.toLocaleString()}`;
   quantity.innerText = count;
 }
 function changeQuantity(key, quantity) {
