@@ -1,7 +1,3 @@
-Alright! Let's incorporate those URLs into the previously generated README.md.
-
----
-
 # addToCart
 
 The `addToCart` project is a simple shopping cart implementation showcasing the addition of products into a cart and adjusting their quantities. This project is specifically tailored for "Lincolnshire Saddles Ltd.", a fictional saddle company.
@@ -51,10 +47,3 @@ The project primarily consists of:
 2. Implementing user accounts and saving cart states for users.
 3. Introducing more interactive UI/UX elements.
 
-## Contribution
-
-Feel free to fork this project, submit issues, and send Pull Requests on [GitHub](https://github.com/chensov/addToCart.git). Any feedback or suggestions are welcome!
-
----
-
-The README now includes the image and repository links. You can now add this README.md to your project repository on GitHub.
