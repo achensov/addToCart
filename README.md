@@ -43,7 +43,7 @@ The project primarily consists of:
 
 ## Future Enhancements
 
-1. Integrating a backend to persist cart data.
-2. Implementing user accounts and saving cart states for users.
+1. Integrating a backend to persist bag data.
+2. Implementing user accounts and saving shopping bag states for users.
 3. Introducing more interactive UI/UX elements.
 
